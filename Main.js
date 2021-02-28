@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-require('dotenv').config();
+
 const client = new Discord.Client({ partials: ["MESSAGE", "CHANNEL", "REACTION" ]});
 
 
@@ -14,5 +14,5 @@ client.events = new Discord.Collection();
 })
 
 
-client.login('pNzkzMjE0NDg4NzUyNTU0MDI2.X-pAjw.dheGQIb4NClyh2suzKeaykjg66M');
+client.login(process.env.token);
 
