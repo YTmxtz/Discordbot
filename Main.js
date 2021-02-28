@@ -22,5 +22,5 @@ mongoose.connect(process.env.MONGO_DB, {
     console.log(err);
 });
 
-client.login(process.env.DISCORD_TOKEN);
+client.login(process.env.token);
 
